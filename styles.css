@@ -1,3 +1,42 @@
+.night{
+    height: 80vh;
+    width: 100%;
+    margin: 5rem;
+
+  
+}
+.surface{
+    height: 140px;
+    width: 1000%;
+    background:url(./assets/Img_02.png);
+    display: block;
+    position: absolute;
+    bottom: auto,-9px;
+    left: 0%;
+    animation: moveRight 6s linear infinite;
+    background-repeat: repeat-x;
+    animation: moveright 6s linear infinite;
+}
+
+.car{
+  position: absolute;
+    left: 20%;
+    bottom: auto;
+    width: 100px;
+    animation: car 6s linear infinite;
+    animation: suspension 1s linear infinite;
+}
+/*animation for car*/
+@keyframes moveright{
+  100%{transform: translate(-2950px);}
+}
+ 
+
+@keyframes suspension{
+  100%{transform: translateY(-1px);}
+  50%{transform: translateY(2px);}
+  0%{transform: translateY(-1px);}
+ }
 /* Reset and base styles */
 
 * {
@@ -342,4 +381,4 @@ footer p::after {
                 radial-gradient(circle at center, var(--c4) min(45vh, 45vw), transparent min(45vh, 45vw)),
                 linear-gradient(var(--c5) 60%, var(--c3) 60%, var(--c2) 150%);
   }
-  
+
